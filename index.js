@@ -7,15 +7,15 @@
 
 function format() {
   var args  = Array.prototype.slice.call(arguments)
-    , s     = args.shift()
+    , out   = args.shift()
     , val   = null
     , index = 0;
 
   while ((val = args.shift())) {
-    s = s.replace(new RegExp('\\{' + index++ + '\\}', 'gm'), val);
+    out = out.replace(new RegExp('\\{' + index++ + '\\}', 'gm'), val);
   }
 
-  return s;
+  return out;
 }
 
 //
