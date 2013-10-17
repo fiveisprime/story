@@ -1,4 +1,4 @@
-Story
+Story [![Build Status](https://travis-ci.org/fiveisprime/story.png?branch=master)](https://travis-ci.org/fiveisprime/story)
 ======
 
 C#-style string format.
