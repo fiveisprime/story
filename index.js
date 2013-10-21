@@ -6,13 +6,13 @@
 //
 
 function format() {
-  var args  = Array.prototype.slice.call(arguments)
-    , out   = args.shift()
-    , val   = null
-    , index = 0;
+  var args   = Array.prototype.slice.call(arguments)
+    , out    = args.shift()
+    , params = args.length
+    , index  = 0;
 
-  while ((val = args.shift())) {
-    out = out.replace(new RegExp('\\{' + index++ + '\\}', 'gm'), val);
+  while (params > index) {
+    out = out.replace(new RegExp('\\{' + index++ + '\\}', 'gm'), args.shift());
   }
 
   return out;

@@ -55,6 +55,8 @@
     "describe"    : false,
     "expect"      : false,
     "it"          : false,
-    "spyOn"       : false
+    "spyOn"       : false,
+    "xit"         : false,
+    "xdescribe"   : false
   }
 }
