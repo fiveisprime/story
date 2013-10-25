@@ -5,6 +5,13 @@
 //     MIT Licensed
 //
 
+//
+// Formats a string using the specified values.
+// # Expected format string values
+// use `{0}` where the number value increases for each value:
+//
+//    format('{0} {1}', 'first', 'second');
+//
 function format() {
   var args   = Array.prototype.slice.call(arguments)
     , out    = args.shift()
