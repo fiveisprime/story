@@ -3,26 +3,25 @@ require('../')();
 describe('unsafe', function() {
 
   it('should attach `format` method to String', function() {
-    expect(String.format).toBeDefined();
-    expect(typeof String.format).toEqual('function');
+    (typeof String.format).should.equal('function');
   });
 
   it('should correctly format a string', function() {
-    expect(String.format('{0}', 'test')).toEqual('test');
+    String.format('{0}', 'test').should.equal('test');
   });
 
   it('should correctly format a string with multiple formats', function() {
-    expect(String.format('{0} {1} {2}', 'test', 'object', 'text')).toEqual('test object text');
+    String.format('{0} {1} {2}', 'test', 'object', 'text').should.equal('test object text');
   });
 
   it('should correctly format numbers to strings', function() {
-    expect(String.format('{0}', 0)).toEqual('0');
+    String.format('{0}', 0).should.equal('0');
   });
 
   it('should correctly call toString on objects', function() {
     var test = { name: 'test object', toString: function() { return this.name; }};
 
-    expect(String.format('{0}', test)).toEqual('test object');
+    String.format('{0}', test).should.equal('test object');
   });
 
 });

@@ -20,7 +20,8 @@
     "url": "https://github.com/fiveisprime/story/issues"
   },
   "devDependencies": {
-    "jasmine-node": "~1.11.0",
-    "jshint": "~2.1.11"
+    "jshint": "~2.1.11",
+    "mocha": "~1.14.0",
+    "should": "~2.1.0"
   }
 }
