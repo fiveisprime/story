@@ -1,5 +1,7 @@
 require('../')();
 
+require('should');
+
 describe('unsafe', function() {
 
   it('should attach `format` method to String', function() {
