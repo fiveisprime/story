@@ -1,7 +1,5 @@
 var story = require('../')(true);
 
-require('should');
-
 describe('safe', function() {
 
   it('should return `format` method on initialization', function() {
