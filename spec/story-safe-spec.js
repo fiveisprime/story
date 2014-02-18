@@ -1,27 +1,28 @@
-var story = require('../')(true);
+var expect = require('chai').expect
+  , story = require('../')(true);
 
 describe('safe', function() {
 
   it('should return `format` method on initialization', function() {
-    (typeof story).should.equal('function');
+    expect(typeof story).to.equal('function');
   });
 
   it('should correctly format a string', function() {
-    story('{0}', 'test').should.equal('test');
+    expect(story('{0}', 'test')).to.equal('test');
   });
 
   it('should correctly format a string with multiple formats', function() {
-    story('{0} {1} {2}', 'test', 'object', 'text').should.equal('test object text');
+    expect(story('{0} {1} {2}', 'test', 'object', 'text')).to.equal('test object text');
   });
 
   it('should correctly format numbers to strings', function() {
-    story('{0}', 0).should.equal('0');
+    expect(story('{0}', 0)).to.equal('0');
   });
 
   it('should correctly call toString on objects', function() {
     var test = { name: 'test object', toString: function() { return this.name; }};
 
-    story('{0}', test).should.equal('test object');
+    expect(story('{0}', test)).to.equal('test object');
   });
 
 });

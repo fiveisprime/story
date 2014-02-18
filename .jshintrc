@@ -53,10 +53,6 @@
     "afterEach"   : false,
     "beforeEach"  : false,
     "describe"    : false,
-    "expect"      : false,
-    "it"          : false,
-    "spyOn"       : false,
-    "xit"         : false,
-    "xdescribe"   : false
+    "it"          : false
   }
 }
