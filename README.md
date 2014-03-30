@@ -1,9 +1,8 @@
-Story [![Build Status](https://travis-ci.org/fiveisprime/story.png?branch=master)](https://travis-ci.org/fiveisprime/story)
+Story [![Build Status](https://travis-ci.org/fiveisprime/story.svg?branch=master)](https://travis-ci.org/fiveisprime/story)
 ======
 
-C#-style string format.
-
-[![NPM](https://nodei.co/npm/story.png)](https://nodei.co/npm/story/)
+C#-style string format. Story will either attach a method to the native String
+type or return a format function that can be used to format strings.
 
 # Usage
 
@@ -23,11 +22,21 @@ var story = require('story')(true);
 console.log(story('totally {0}', 'sweet')); // Outputs 'totally sweet'
 ```
 
+Use Story in the browser.
+
+```js
+// Attach the format method to the string primitive.
+window.sotry();
+
+// Return a function that formats.
+var format = window.story(true);
+```
+
 # License
 
 The MIT License (MIT)
 
-Copyright (c) 2013 Matt Hernandez
+Copyright (c) 2014 Matt Hernandez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
