@@ -1,4 +1,4 @@
-Story [![Build Status](https://travis-ci.org/fiveisprime/story.svg?branch=master)](https://travis-ci.org/fiveisprime/story)
+Story [![Build Status](https://travis-ci.org/fiveisprime/story.svg?branch=master)](https://travis-ci.org/fiveisprime/story) [![NPM version](https://badge.fury.io/js/story.svg)](http://badge.fury.io/js/story)
 ======
 
 C#-style string format. Story will either attach a method to the native String
